@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'DIN light';
+    src: url('../fonts/DIN-Light/DIN-Light-Regular/DIN-Light-Regular.otf')
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: 'Mulish';
+    src: url(../fonts/Mulish/Mulish-VariableFont_wght.ttf);
+}

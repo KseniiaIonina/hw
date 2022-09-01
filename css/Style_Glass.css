@@ -16,7 +16,7 @@ header{
 .logo{
     width: 15%;
     height: 80%;
-    background-image: url(./img/logo.png);
+    background-image: url(../img/logo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -41,24 +41,74 @@ header > nav{
 .header_menu_list a{
     color: black;
     text-decoration: none;
+    font-family: 'DIN light';
+    font-weight: 300;
+    size: 14px;
+    line-height: 24px;
 }
 
 .header_menu_list span{
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url(./img/language.png);
+    background-image: url(../img/language.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
+.header_book_now_btn_right {
+  /*  padding: 1.25em 2.25em; */
+    border: 0;
+    background-color: #E9ECE0;
+    color: #333333;
+    font-size: 16px;  
+    width: 7rem; 
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.header_book_now_btn_right > sup {
+    font-size: 10px;
+    position: relative;
+    left: 10px;
+    padding-left: 1em;
+    }
+
+.header_book_now_btn_right > sub {
+    position: relative;
+    right: 0.75em;
+    top: 1em;
+    padding-left: 2em;
+    }
+
+    /* .header_book_now_btn_right > b {
+        position: absolute;
+        top: 10px;
+        } */
 
 .header_book_now_btn{
     padding: 1.25em 2.25em;
     border: 0;
     background-color: #5B6460;
     color: white;
+    font-size: 14px;
+    font-family: 'DIN light';
+    font-weight: 300;
+    line-height: 28px;
+
+
+
+}
+.header_book_now_btn_left{
+    padding: 1.25em 2.25em;
+    border: 0;
+    background-color: #5B6460;
+    color: white;
     font-size: 16px;
+    height: 5rem;
+    width: 15rem;
+    margin-right: -4px;
 }
 
 main{
@@ -69,7 +119,138 @@ main{
 .main_intro{
     width: 100%;
     height: 90vh;
-    background-image: url(./img/intro-img.png);
+    background-image: url(../img/intro-img.png);
     background-position: center;
-    
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 }
+.main_intro_inner {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.main_intro_div {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 2em;
+    right: 9em;
+    flex-direction: column;
+    align-items: flex-end; 
+   
+}
+.main_intro_text {
+    color: white;
+    font-weight: 300;
+    font-size: 8.5em;
+    font-family: 'Open Sans';
+    line-height: 72px;
+
+}
+.main_intro_text2 {
+
+    color: white;
+    font-weight: 400;
+    font-size: 2em;
+    font-family: 'Mulish';
+    line-height: 1.5em;
+    text-align: center;
+    margin-right: 6em;
+}
+.back_rl {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    height: 60%;
+    position: absolute;
+    bottom: 5em;
+    gap: 2em; /* делает отступ м/у блоками */
+
+}
+.back_img_size {
+    width: 50px;
+    height: 25px;
+}
+.main_book_now_btn {
+    display: flex;
+    height: 15vh;
+    position: absolute;
+    bottom: -9em;
+    left: 2em;
+    }
+    .header_book_now_btn_right>b {
+        box-sizing: border-box;
+        padding-left: 1em;
+        
+    }
+   .main_cabin_text> h3{
+       font-family: 'Open Sans';
+       font-weight: 400;
+       font-size: 4em;
+       line-height: 40px;
+       color: #5B6460;
+       font-style: normal;
+
+    }
+    .main_cabin_text>p{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        box-sizing: border-box;
+        padding: 15em;
+        text-align: left;
+    }
+    .main_cabin_text>p>u{
+     font-weight: 600;
+     color: #5B6460;   
+    }
+.main_cabin {
+display: flex;
+width: 100%;
+height: 80%;
+align-items: center;
+justify-content: space-between;
+margin-top: 40px;
+}
+.main_cabin_text {
+    display: flex;
+    width: 50%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_cabin_img{
+    width: 50%;
+    height: 80%;
+}
+.main_cabin_img > img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+
+}
+.cabin_img {
+    display: flex;
+    height: 80%;
+    width: 98%;
+    margin: 2em auto;
+    justify-content: space-between;
+}
+
+.img1 {
+    object-fit: contain;
+    height: 100%;
+    width: 33%;
+}
+
+
+
+
+
+
+

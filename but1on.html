@@ -4,47 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/Style_Glass.css">
+    <title>Book_now</title>
     <style>
-
-        html,body{
-            width: 100%;
-            height: 100%;
-            margin: 0;
-        }
-       
-
-        /* section{
-            width: 50%;
-            height: 50%;
-            border: 1px solid black;
-            position: relative;
-            margin: 5em auto
-        }
-        div{
-            width: 200px;
-            height: 200px;
-            background-color: black;
-        } */
-
-        /* div{
-            position: relative;
-            top: 2em;
-            left: 5em;
-        } */
-
-        /* div{
-            position: absolute;
-            bottom: 0;
-        } */
-
-        /* div{
-            position: fixed;
-            bottom: 0;
-            right: 0;
-        } */
-
-        .open{
+.open{
             font-size: 30px;
             position: relative;
             top: 5em;
@@ -84,12 +47,23 @@
     </style>
 </head>
 <body>
-    <!-- <section>
-        <div></div>
-    </section> -->
-    <!-- <div class="second"></div> -->
-
-    <button class="open">Click me</button>
+    <header>
+        <div class="logo"></div>
+        <nav>
+            <ul class="header_menu_list">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="#">THE HUT</a></li>
+                <li><a href="#">THE AREA</a></li>
+                <li><a href="#">BOOKING</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><span class="language_img_placeholder"></span></li>
+            </ul>
+        </nav>
+        <button class="header_book_now_btn">BOOK NOW</button>
+    </header>  
+    <main>
+        <button class="open">Click me</button>
 
     <div class="modal">
         <div class="modal_inner">
@@ -110,5 +84,7 @@
             modal.classList.remove('open_modal')
         })
     </script>
+</body>
+    </main>
 </body>
 </html>
