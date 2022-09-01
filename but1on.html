@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Style_Glass.css">
+    <title>Book_now</title>
+    <style>
+.open{
+            font-size: 30px;
+            position: relative;
+            top: 5em;
+            left: 5em;
+        }
+
+        .modal{
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0,0,0,.3);
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .modal_inner{
+            width: 50%;
+            height: 50%;
+            background-color: white;
+            box-sizing: border-box;
+            padding: 2em;
+        }
+
+        .close{
+            font-size: 30px;
+        }
+
+        .open_modal{
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <nav>
+            <ul class="header_menu_list">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="#">THE HUT</a></li>
+                <li><a href="#">THE AREA</a></li>
+                <li><a href="#">BOOKING</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><span class="language_img_placeholder"></span></li>
+            </ul>
+        </nav>
+        <button class="header_book_now_btn">BOOK NOW</button>
+    </header>  
+    <main>
+        <button class="open">Click me</button>
+
+    <div class="modal">
+        <div class="modal_inner">
+            <h1>Это модальное окно</h1>
+            <button class="close">close it</button>
+        </div>
+    </div>
+
+    <script>
+        let open_btn = document.querySelector('.open')
+        let close_btn = document.querySelector('.close')
+        let modal = document.querySelector('.modal')
+
+        open_btn.addEventListener('click', (e) => {
+            modal.classList.add('open_modal')
+        })
+        close_btn.addEventListener('click', (e) => {
+            modal.classList.remove('open_modal')
+        })
+    </script>
+</body>
+    </main>
+</body>
+</html>
